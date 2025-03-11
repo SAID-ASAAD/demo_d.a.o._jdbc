@@ -2,8 +2,8 @@ package application;
 
 import java.time.LocalDate;
 
-import entities.Department;
-import entities.Seller;
+import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
