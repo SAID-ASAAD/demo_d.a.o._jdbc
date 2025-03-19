@@ -171,7 +171,7 @@ public class SellerDaoJDBC implements SellerDao{
 			rs = st.executeQuery();
 			
 			List<Seller> list = new ArrayList<>();
-			Map<Integer, Department> map = new HashMap<>(); //controle para não repetição do obj department
+			Map<Integer, Department> map = new HashMap<>(); //controle para não repetição dep
 			
 			while (rs.next()) {
 				Department dep = map.get(rs.getInt("DepartmentId"));
@@ -212,8 +212,7 @@ public class SellerDaoJDBC implements SellerDao{
 			rs = st.executeQuery();
 			
 			List<Seller> list = new ArrayList<>();
-			Map<Integer, Department> map = new HashMap<>(); //controle para não repetição do obj department
-			
+			Map<Integer, Department> map = new HashMap<>(); //controle para não repetição do dep			
 			while (rs.next()) {
 				Department dep = map.get(rs.getInt("DepartmentId"));
 				
